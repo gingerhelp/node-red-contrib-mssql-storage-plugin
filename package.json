@@ -1,0 +1,36 @@
+{
+  "name": "red-contrib-mssql-storage-plugin",
+  "version": "0.1.0",
+  "description": "Node-RED Storage Plugin For Microsoft SQL Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gingerhelp/node-red-contrib-mssql-storage-plugin.git"
+  },
+  "keywords": [
+    "node-red",
+    "mssql"
+  ],
+  "author": "Adam Ellis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gingerhelp/node-red-contrib-mssql-storage-plugin/issues"
+  },
+  "homepage": "https://github.com/gingerhelp/node-red-contrib-mssql-storage-plugin#readme",
+  "dependencies": {
+    "mssql": "^6.0.1",
+    "when": "3.7.8"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.17.0"
+  }
+}
