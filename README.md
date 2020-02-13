@@ -14,7 +14,7 @@ http://nodered.org/docs/embedding.html
 Firstly, require the module:
 
 ```bash
-npm install --save node-red-mongo-contrib-mssql-storage-plugin
+npm install --save node-red-contrib-mssql-storage-plugin
 ```
 
 Then, in your settings, add:
