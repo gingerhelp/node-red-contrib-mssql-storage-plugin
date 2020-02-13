@@ -20,7 +20,7 @@ npm install --save node-red-mongo-contrib-mssql-storage-plugin
 Then, in your settings, add:
 
 ```javascript
-const storageModule = require('./node-red-mssql-storage-plugin');
+const storageModule = require('node-red-contrib-mssql-storage-plugin');
 const sqlConfig = {
   user: 'sa',
   password: 'myPassword',
@@ -49,7 +49,18 @@ const settings = {
 };
 ```
 
-Last, you will need to create the tables by running the CreateTables.sql file against your database.
+Note that for sqlConfig I recommend storing all of the values in your .env file instead of hardcoding them like above.  Then your sqlConfig could just look like this:
+```
+const sqlConfig = {
+  user: process.env.SQL_USER,
+  password: process.env.SQL_PASSWORD,
+  server: process.env.SQL_SERVER,
+  database: process.env.SQL_DATABASE,
+  encrypt: true
+};
+```
+
+Lastly, you will need to create the tables by running the CreateTables.sql file against your database.
 
 TODO
 -----
@@ -58,4 +69,5 @@ TODO
 Q&A
 -----
 Q. Why the heck did you break this out into separate tables when you are primarily just deleting and inserting a single row?
+
 A. Good question :)  The reason I am doing it this way is because I am ultimately working on a structure here to allow flows to be broken up into pieces and secured by having multiple NodeRedFlows rows as a bit of a repository and use the admin API to overwrite the "working" version via a separate frontend.  More to come on that.

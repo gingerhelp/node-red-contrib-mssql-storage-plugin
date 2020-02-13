@@ -1,5 +1,5 @@
 {
-  "name": "red-contrib-mssql-storage-plugin",
+  "name": "node-red-contrib-mssql-storage-plugin",
   "version": "0.1.0",
   "description": "Node-RED Storage Plugin For Microsoft SQL Server",
   "main": "index.js",
